@@ -22,6 +22,46 @@
 @import url(norm-layout-160607-header.css);
 a.sa {position: static;}
 
+  .topics-list{display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    /*width: 70%;*/
+
+  }
+
+  .topics-list li{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    /*flex-wrap: wrap;*/
+
+  }
+
+/*  li{
+    align-items:;
+  }*/
+
+  .scrollable{
+    display: flex;
+
+  }
+  @media (max-width: 600px) {
+    .scrollable{
+      flex-direction: column-reverse;
+      /*border: 3px solid;*/
+    }
+  }
+
+.topics:after{
+  background: none;
+}
+.topics .topics-list li {
+  list-style: none;
+  position: relative;
+}
+
+
 </style>
 
 <!-- END style sheet section -->
